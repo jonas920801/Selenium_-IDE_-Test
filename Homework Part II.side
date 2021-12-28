@@ -1,0 +1,149 @@
+{
+  "id": "ae99b098-71e6-4cd5-8514-8e6ca3b8f131",
+  "version": "2.0",
+  "name": "Homework II",
+  "url": "http://automationpractice.com/index.php",
+  "tests": [{
+    "id": "a061a486-2eea-4ac2-b387-0b246886fe17",
+    "name": "Homework 2",
+    "commands": [{
+      "id": "81c8c5d6-4ef1-446b-b27d-a2a5b7fd6109",
+      "comment": "",
+      "command": "open",
+      "target": "http://automationpractice.com/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f32bce1-edcf-459e-981c-bc789d189d5c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e610f737-698c-420c-8413-822269d1e463",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_query_top",
+      "targets": [
+        ["id=search_query_top", "id"],
+        ["name=search_query", "name"],
+        ["css=#search_query_top", "css:finder"],
+        ["xpath=//input[@id='search_query_top']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98318cdb-8afa-4426-84b3-67c6af68eda9",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_query_top",
+      "targets": [
+        ["id=search_query_top", "id"],
+        ["name=search_query", "name"],
+        ["css=#search_query_top", "css:finder"],
+        ["xpath=//input[@id='search_query_top']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Faded Short Sleeve T-shirts"
+    }, {
+      "id": "842bb1ba-2951-4bd3-8b68-b95d9fe4af0f",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit_search",
+      "targets": [
+        ["name=submit_search", "name"],
+        ["css=.button-search", "css:finder"],
+        ["xpath=//button[@name='submit_search']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b505446c-19ab-4382-a8a5-5a4f332730fb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.clearfix:nth-child(2) .replace-2x",
+      "targets": [
+        ["css=.clearfix:nth-child(2) .replace-2x", "css:finder"],
+        ["xpath=//img[contains(@src,'http://automationpractice.com/img/p/1/1-small_default.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='best-sellers_block_right']/div/ul/li[2]/a/img", "xpath:idRelative"],
+        ["xpath=//li[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c74211c-ee9c-4d17-97d1-8cc951b40dc9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.clearfix:nth-child(2) .price",
+      "targets": [
+        ["css=.clearfix:nth-child(2) .price", "css:finder"],
+        ["xpath=//div[@id='best-sellers_block_right']/div/ul/li[2]/div/div/span", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'$16.51')]", "xpath:innerText"]
+      ],
+      "value": "$16.51"
+    }, {
+      "id": "cdc8dbb1-dcb4-42be-9979-edaa23df3649",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product_img_link > .replace-2x",
+      "targets": [
+        ["css=.product_img_link > .replace-2x", "css:finder"],
+        ["xpath=(//img[@alt='Faded Short Sleeve T-shirts'])[2]", "xpath:img"],
+        ["xpath=//div[@id='center_column']/ul/li/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//li/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef2e6bc8-016b-42ca-a868-5f51c95d08a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.exclusive > span",
+      "targets": [
+        ["css=.exclusive > span", "css:finder"],
+        ["xpath=//p[@id='add_to_cart']/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/p/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccb34f98-aba0-427a-8bed-7b8c185875c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-medium:nth-child(2) > span",
+      "targets": [
+        ["css=.button-medium:nth-child(2) > span", "css:finder"],
+        ["xpath=//div[@id='layer_cart']/div/div[2]/div[4]/a/span", "xpath:idRelative"],
+        ["xpath=//div[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Proceed to checkout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0369f958-903d-4a14-b982-ea3d613699dc",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=total_price",
+      "targets": [
+        ["id=total_price", "id"],
+        ["css=#total_price", "css:finder"],
+        ["xpath=//span[@id='total_price']", "xpath:attributes"],
+        ["xpath=//td[@id='total_price_container']/span", "xpath:idRelative"],
+        ["xpath=//td[2]/span", "xpath:position"]
+      ],
+      "value": "$18.51"
+    }]
+  }],
+  "suites": [{
+    "id": "50f54c18-ef96-4dc4-b74b-a7162e6a5107",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a061a486-2eea-4ac2-b387-0b246886fe17"]
+  }],
+  "urls": ["http://automationpractice.com/index.php"],
+  "plugins": []
+}

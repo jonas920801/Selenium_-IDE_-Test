@@ -1,0 +1,356 @@
+{
+  "id": "21003eea-578f-41f2-8bbc-c992d80f3761",
+  "version": "2.0",
+  "name": "Automatization Test ",
+  "url": "https://opensource-demo.orangehrmlive.com/index.php/auth/login",
+  "tests": [{
+    "id": "b54fa416-0f67-4824-9055-c336fa5a529c",
+    "name": "Test_Number1",
+    "commands": [{
+      "id": "be0daf8c-82d5-4314-8208-de5ad240738e",
+      "comment": "",
+      "command": "open",
+      "target": "https://opensource-demo.orangehrmlive.com/index.php/auth/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1705a19-5199-4560-b785-58d9d7a65aa1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1346x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7cf9d2f-3958-456d-91ee-431987a00681",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "OrangeHRM",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63709d24-80ba-4d23-b98d-77a805a82a8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#divUsername > .form-hint",
+      "targets": [
+        ["css=#divUsername > .form-hint", "css:finder"],
+        ["xpath=//div[@id='divUsername']/span", "xpath:idRelative"],
+        ["xpath=//form/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85d6600d-d506-4edd-bba5-fd285a28962b",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtUsername",
+      "targets": [
+        ["id=txtUsername", "id"],
+        ["name=txtUsername", "name"],
+        ["css=#txtUsername", "css:finder"],
+        ["xpath=//input[@id='txtUsername']", "xpath:attributes"],
+        ["xpath=//div[@id='divUsername']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "loco"
+    }, {
+      "id": "aba62960-52b0-4f7e-ab7e-ef3b9be4190c",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtPassword",
+      "targets": [
+        ["id=txtPassword", "id"],
+        ["name=txtPassword", "name"],
+        ["css=#txtPassword", "css:finder"],
+        ["xpath=//input[@id='txtPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='divPassword']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "57ce5bf5-2150-44ee-a142-af199db8fee8",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnLogin",
+      "targets": [
+        ["id=btnLogin", "id"],
+        ["name=Submit", "name"],
+        ["css=#btnLogin", "css:finder"],
+        ["xpath=//input[@id='btnLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='divLoginButton']/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5350499a-7912-4701-beff-fc440d7324f9",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=spanMessage",
+      "targets": [
+        ["id=spanMessage", "id"],
+        ["css=#spanMessage", "css:finder"],
+        ["xpath=//span[@id='spanMessage']", "xpath:attributes"],
+        ["xpath=//div[@id='divLoginButton']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Invalid credentials')]", "xpath:innerText"]
+      ],
+      "value": "Invalid credentials"
+    }, {
+      "id": "689c351f-0f07-4432-8ecb-55e53012d972",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=spanMessage",
+      "targets": [
+        ["id=spanMessage", "id"],
+        ["css=#spanMessage", "css:finder"],
+        ["xpath=//span[@id='spanMessage']", "xpath:attributes"],
+        ["xpath=//div[@id='divLoginButton']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Invalid credentials')]", "xpath:innerText"]
+      ],
+      "value": "Invalid credentials"
+    }, {
+      "id": "6be88e33-1b81-443a-95fd-162d3e1718cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=frmLogin",
+      "targets": [
+        ["id=frmLogin", "id"],
+        ["css=#frmLogin", "css:finder"],
+        ["xpath=//form[@id='frmLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='divLoginForm']/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6c33630-3cef-44b9-9f2b-721bd4f4697c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#divUsername > .form-hint",
+      "targets": [
+        ["css=#divUsername > .form-hint", "css:finder"],
+        ["xpath=//div[@id='divUsername']/span", "xpath:idRelative"],
+        ["xpath=//form/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7d80f6e-42b8-4c1c-97c3-303358642fb5",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtUsername",
+      "targets": [
+        ["id=txtUsername", "id"],
+        ["name=txtUsername", "name"],
+        ["css=#txtUsername", "css:finder"],
+        ["xpath=//input[@id='txtUsername']", "xpath:attributes"],
+        ["xpath=//div[@id='divUsername']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Admin"
+    }, {
+      "id": "fb35a1d7-27c9-4d49-9513-720f58ccdc65",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtPassword",
+      "targets": [
+        ["id=txtPassword", "id"],
+        ["name=txtPassword", "name"],
+        ["css=#txtPassword", "css:finder"],
+        ["xpath=//input[@id='txtPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='divPassword']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "admin123"
+    }, {
+      "id": "a6dc47a1-a38e-48d0-9526-02048939bcd3",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnLogin",
+      "targets": [
+        ["id=btnLogin", "id"],
+        ["name=Submit", "name"],
+        ["css=#btnLogin", "css:finder"],
+        ["xpath=//input[@id='btnLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='divLoginButton']/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04a5aec6-3d92-4a17-b95a-0b76a8a90a72",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menu_pim_viewMyDetails > b",
+      "targets": [
+        ["css=#menu_pim_viewMyDetails > b", "css:finder"],
+        ["xpath=//a[@id='menu_pim_viewMyDetails']/b", "xpath:idRelative"],
+        ["xpath=//li[6]/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'My Info')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e00b0df3-f143-4679-b71c-cb6d129ebfc4",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnSave",
+      "targets": [
+        ["id=btnSave", "id"],
+        ["css=#btnSave", "css:finder"],
+        ["xpath=//input[@id='btnSave']", "xpath:attributes"],
+        ["xpath=//form[@id='frmEmpPersonalDetails']/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed51f455-9939-46e5-bacd-7634a430b35a",
+      "comment": "",
+      "command": "click",
+      "target": "id=personal_cmbNation",
+      "targets": [
+        ["id=personal_cmbNation", "id"],
+        ["name=personal[cmbNation]", "name"],
+        ["css=#personal_cmbNation", "css:finder"],
+        ["xpath=//select[@id='personal_cmbNation']", "xpath:attributes"],
+        ["xpath=//form[@id='frmEmpPersonalDetails']/fieldset/ol[3]/li[3]/select", "xpath:idRelative"],
+        ["xpath=//li[3]/select", "xpath:position"],
+        ["xpath=//select[contains(.,'-- Select --\nAfghan\nAlbanian\nAlgerian\nAmerica\nAmerican\nAndorran\nAngolan\nAntiguans\nArgentinean\nArmenian\nAustralian\nAustrian\nAzerbaijani\nBahamian\nBahraini\nBangladeshi\nBarbadian\nBarbudans\nBatswana\nBelarusian\nBelgian\nBelizean\nBeninese\nBhutanese\nBolivian\nBosnian\nBrazilian\nBritish\nBruneian\nBulgarian\nBurkinabe\nBurmese\nBurundian\nCambodian\nCameroonian\nCanadian\nCape Verdean\nCentral African\nChadian\nChilean\nChinese\nColombian\nComoran\nCongolese\nCosta Rican\nCroatian\nCuban\nCypriot\nCzech\nDanish\nDjibouti\nDominican\nDutch\nEast Timorese\nEcuadorean\nEgyptian\nEmirian\nEquatorial Guinean\nEritrean\nEstonian\nEthiopian\nFijian\nFilipino\nFinnish\nFrench\nGabonese\nGambian\nGeorgian\nGerman\nGhanaian\nGreek\nGrenadian\nGuatemalan\nGuinea-Bissauan\nGuinean\nGuyanese\nHaitian\nHerzegovinian\nHonduran\nHungarian\nI-Kiribati\nIcelander\nIndian\nIndians128\nindonesia\nIndonesian\nIranian\nIraqi\nIrish\nIsraeli\nItalian\nIvorian\nJamaican\nJapanese\nJordanian\nKazakhstani\nKenyan\nKittian and Nevisian\nKuwaiti\nKyrgyz\nLaotian\nLatvian\nLebanese\nLiberian\nLibyan\nLiechtensteiner\nLithuanian\nLuxembourger\nMacedonian\nMalagasy\nMalawian\nMalaysian\nMaldivan\nMalian\nMaltese\nMarshallese\nMauritanian\nMauritian\nMexican\nMicronesian\nMoldovan\nMonacan\nMongolian\nMoroccan\nMosotho\nMotswana\nMozambican\nNamibian\nNauruan\nNepalese\nNew Zealander\nNicaraguan\nNigerian\nNigerien\nNorth Korean\nNorthern Irish\nNorwegian\nOmani\nPakistani\nPalauan\nPanamanian\nPapua New Guinean\nParaguayan\nPeruvian\nPolish\nPortuguese\nQatari\nRomanian\nRussian\nRwandan\nSaint Lucian\nSalvadoran\nSamoan\nSan Marinese\nSao Tomean\nSaudi\nScottish\nSenegalese\nSerbian\nSeychellois\nSierra Leonean\nSingaporean\nSlovakian\nSlovenian\nSolomon Islander\nSomali\nSouth African\nSouth Korean\nSpanish\nSri Lankan\nSudanese\nSurinamer\nSwazi\nSwedish\nSwiss\nSyrian\nTaiwanese\nTajik\nTanzanian\nThai\nTogolese\nTongan\nTrinidadian or Tobagonian\nTunisian\nTurkish\nTuvaluan\nUgandan\nUkrainian\nUruguayan\nUzbekistani\nVenezuelan\nVietnamese\nWelsh\nYemenite\nZambian\nZimbabwean')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3248dc7e-9efd-4269-8606-e02f5c2f16b7",
+      "comment": "",
+      "command": "select",
+      "target": "id=personal_cmbNation",
+      "targets": [],
+      "value": "label=Colombian"
+    }, {
+      "id": "ebb67ff1-eb01-4ae5-9217-b883c775b7c3",
+      "comment": "",
+      "command": "click",
+      "target": "id=personal_txtEmpNickName",
+      "targets": [
+        ["id=personal_txtEmpNickName", "id"],
+        ["name=personal[txtEmpNickName]", "name"],
+        ["css=#personal_txtEmpNickName", "css:finder"],
+        ["xpath=//input[@id='personal_txtEmpNickName']", "xpath:attributes"],
+        ["xpath=//form[@id='frmEmpPersonalDetails']/fieldset/ol[4]/li/input", "xpath:idRelative"],
+        ["xpath=//ol[4]/li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c845f37b-53d0-43ab-9d53-e1e6354b9abd",
+      "comment": "",
+      "command": "click",
+      "target": "css=ol:nth-child(4) > li:nth-child(1)",
+      "targets": [
+        ["css=ol:nth-child(4) > li:nth-child(1)", "css:finder"],
+        ["xpath=//form[@id='frmEmpPersonalDetails']/fieldset/ol[4]/li", "xpath:idRelative"],
+        ["xpath=//ol[4]/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Nick Name')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c52c930-1484-446f-b885-326391435ef4",
+      "comment": "",
+      "command": "type",
+      "target": "id=personal_txtEmpNickName",
+      "targets": [
+        ["id=personal_txtEmpNickName", "id"],
+        ["name=personal[txtEmpNickName]", "name"],
+        ["css=#personal_txtEmpNickName", "css:finder"],
+        ["xpath=//input[@id='personal_txtEmpNickName']", "xpath:attributes"],
+        ["xpath=//form[@id='frmEmpPersonalDetails']/fieldset/ol[4]/li/input", "xpath:idRelative"],
+        ["xpath=//ol[4]/li/input", "xpath:position"]
+      ],
+      "value": "Test_1"
+    }, {
+      "id": "2e064434-e118-42cc-a1ed-80f28bbbb427",
+      "comment": "",
+      "command": "click",
+      "target": "css=.new:nth-child(4)",
+      "targets": [
+        ["css=.new:nth-child(4)", "css:finder"],
+        ["xpath=//form[@id='frmEmpPersonalDetails']/fieldset/ol[4]/li[4]", "xpath:idRelative"],
+        ["xpath=//ol[4]/li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'* Required field')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49d5d2ae-4226-4e19-bba5-24654eb386fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnSave",
+      "targets": [
+        ["id=btnSave", "id"],
+        ["css=#btnSave", "css:finder"],
+        ["xpath=//input[@id='btnSave']", "xpath:attributes"],
+        ["xpath=//form[@id='frmEmpPersonalDetails']/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "822cc280-b405-4ef5-9b5a-421a1b53fead",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnAddAttachment",
+      "targets": [
+        ["id=btnAddAttachment", "id"],
+        ["css=#btnAddAttachment", "css:finder"],
+        ["xpath=//input[@id='btnAddAttachment']", "xpath:attributes"],
+        ["xpath=//p[@id='attachmentActions']/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/form/p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c50ed060-63ff-4379-885f-40210cc1764d",
+      "comment": "",
+      "command": "click",
+      "target": "id=ufile",
+      "targets": [
+        ["id=ufile", "id"],
+        ["name=ufile", "name"],
+        ["css=#ufile", "css:finder"],
+        ["xpath=//input[@id='ufile']", "xpath:attributes"],
+        ["xpath=//form[@id='frmEmpAttachment']/fieldset/ol/li[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//li[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3aa5208-8c8d-4184-86c4-9fbcc84a6c58",
+      "comment": "",
+      "command": "type",
+      "target": "id=ufile",
+      "targets": [
+        ["id=ufile", "id"],
+        ["name=ufile", "name"],
+        ["css=#ufile", "css:finder"],
+        ["xpath=//input[@id='ufile']", "xpath:attributes"],
+        ["xpath=//form[@id='frmEmpAttachment']/fieldset/ol/li[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//li[2]/input[2]", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\SelenumIDE Test.txt"
+    }, {
+      "id": "63e1db09-a743-4e33-b7f9-2d35474d19f1",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnSaveAttachment",
+      "targets": [
+        ["id=btnSaveAttachment", "id"],
+        ["name=btnSaveAttachment", "name"],
+        ["css=#btnSaveAttachment", "css:finder"],
+        ["xpath=//input[@id='btnSaveAttachment']", "xpath:attributes"],
+        ["xpath=//form[@id='frmEmpAttachment']/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/form/fieldset/p/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7de69245-1502-432e-86c9-1ffc7fb026c4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b54fa416-0f67-4824-9055-c336fa5a529c"]
+  }],
+  "urls": ["https://opensource-demo.orangehrmlive.com/index.php/auth/login"],
+  "plugins": []
+}
